@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Média de Idade dos Familiares</title>
+  </head>
+  <body>
+    <h1>Média de Idade dos Familiares</h1>
+    <script>
+      //Todas as funções são declaradas no início
+
+      //Função sem parâmetros
+      function pularLinha() {
+        document.write("<br>");
+      }
+
+      //Função com parâmetros
+      function mostrar(frase) {
+        document.write(frase);
+        pularLinha();
+      }
+      var somaIdades = 0;
+      var quantFamiliares = parseInt(prompt("Quantos familiares você tem?"));
+
+      for (var i = 1; i <= quantFamiliares; i++) {
+        var idade = parseInt(prompt("Informe a idade do familiar número " + i));
+        somaIdades = somaIdades + idade;
+      }
+      var media = somaIdades / quantFamiliares;
+      mostrar("A média de idades da sua família é: " + Math4.round(media));
+    </script>
+  </body>
+</html>

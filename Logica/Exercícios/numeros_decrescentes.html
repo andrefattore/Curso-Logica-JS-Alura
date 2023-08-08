@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imprimir Números</title>
+  </head>
+  <body>
+    <h1>Todos os números de 20 a 0.</h1>
+    <p>
+      Agora é sua vez. Roberta lançou o desafio para você imprimir em ordem
+      decrescente todos os números entre 20 e 0, incluindo os limites! No final,
+      escreva a palavra "FIM".
+    </p>
+
+    <script>
+      //Todas as funções são declaradas no início
+
+      //Função sem parâmetros
+      function pularLinha() {
+        document.write("<br>");
+      }
+
+      //Função com parâmetros
+      function mostrar(frase) {
+        document.write(frase);
+        pularLinha();
+      }
+
+      var cont = 20;
+
+      while (cont >= 0) {
+       
+          mostrar(cont);
+        
+
+        cont--;
+      }
+    </script>
+  </body>
+</html>

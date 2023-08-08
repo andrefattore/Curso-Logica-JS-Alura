@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detetive Roy</title>
+  </head>
+  <body>
+    <p>
+      O detetive Roy, investigando os arquivos de um hacker, encontrou o
+      seguinte programa:
+    </p>
+    <p>document.write( (12 + 15 + 13) / 3);</p>
+    <p>
+      Sabemos que o código calcula a média de três números. Mas o que eles
+      significam?
+    </p>
+    <p>
+      Dias depois, o hacker, que era na verdade um hacker do bem, virou amigo de
+      Roy e durante uma conversa o assunto do código veio à tona. Curioso, Roy
+      perguntou ao hacker o que aqueles números significavam e o hacker disse:
+      ah, o programa calcula a média das idades das minhas filhas. Linda tem 12
+      anos, Guaraciara tem 15 e Pérola tem 13! Roy ficou decepcionado com a
+      resposta, pois achou que era algo mais complicado.
+    </p>
+    <p>
+      Se você pudesse voltar no tempo e reescrever o programa para que o próprio
+      detetive Roy conseguisse entendê-lo , como você o reescreveria?
+    </p>
+    <p>DICA: faça uso de variáveis para deixar seu código mais claro.</p>
+    <br />
+    <br />
+    <script>
+      var idadeLinda = 12;
+      var idadeGuaraciara = 15;
+      var idadePerola = 13;
+
+      var idadeMedia = (idadeGuaraciara + idadeLinda + idadePerola) / 3;
+
+      document.write("A média das idades é " + Math.round(idadeMedia));
+    </script>
+  </body>
+</html>

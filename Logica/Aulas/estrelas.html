@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estrela</title>
+  </head>
+  <body>
+    <h1>Estrelas</h1>
+    <script>
+      //Todas as funções são declaradas no início
+
+      //Função sem parâmetros
+      function pularLinha() {
+        document.write("<br>");
+      }
+
+      //Função com parâmetros
+      function mostrar(frase) {
+        document.write(frase);
+        pularLinha();
+      }
+
+      for (var i = 0; i < 3; i++) {
+        for (var j = 0; j < 10; j++) {
+          document.write("*");
+        }
+        pularLinha();
+      }
+    </script>
+  </body>
+</html>

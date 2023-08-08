@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imprimir Números</title>
+  </head>
+  <body>
+    <h1>Todos os números entre 30 a 40, exceto 33 e 37!</h1>
+    <p>
+      Roberta quer uma dificuldade um pouco maior em seu programa. Agora ela
+      precisa imprimir todos os números entre 30 e 40 (inclusive 30 e 40), porém
+      os números 33 e 37 não devem ser impressos! No final, o trecho de código
+      precisa ter a palavra "FIM". Use o while para essa tarefa.
+    </p>
+
+    <script>
+      //Todas as funções são declaradas no início
+
+      //Função sem parâmetros
+      function pularLinha() {
+        document.write("<br>");
+      }
+
+      //Função com parâmetros
+      function mostrar(frase) {
+        document.write(frase);
+        pularLinha();
+      }
+
+      var cont = 30;
+
+      while (cont <= 40) {
+
+        if (cont != 33 && cont != 37) {
+          mostrar(cont);
+        }
+        
+        cont++;
+      }
+    </script>
+  </body>
+</html>

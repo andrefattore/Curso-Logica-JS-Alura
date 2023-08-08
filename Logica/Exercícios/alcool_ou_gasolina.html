@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Álcool ou Gasolina?</title>
+  </head>
+  <body>
+    <h1>Álcool ou Gasolina?</h1>
+    <p>
+      Você agora é uma pessoa desenvolvedora e gostaria de aplicar seus
+      conhecimentos em programação para resolver problemas do cotidiano.
+      <br />
+      O primeiro problema que surge é sobre o consumo de combustível de seu
+      carro, vamos olhar com mais atenção os detalhes? Portanto, confira as
+      informações abaixo:
+      <br />
+      Seu carro tem um tanque de 40 litros e pode utilizar álcool ou gasolina.
+      <br />
+      Com gasolina e usando todo o tanque você percorre um caminho com gasolina
+      de 480 quilômetros. Qual é o consumo de gasolina`?
+      <br />
+      Com álcool, um tanque de 40 litros fez um caminho com Álcool de 300
+      quilômetros. Qual é o consumo de Álcool?
+      <br />
+      Para o cálculo do consumo, divida a distância percorrida pela quantidade
+      de litros gastos. Imprima o valor utilizando document.write.
+    </p>
+
+    <script>
+        tamanhoTanque=40;
+        quilometragemGasolina=480;
+        quilometragemAlcool=300;
+        consumo = quilometragemGasolina/tamanhoTanque;
+        document.write("Consumo Gasolina: " +consumo+ "km/l <br>");
+        consumo =quilometragemAlcool/tamanhoTanque;
+        document.write("Consumo Álcool: " +consumo+ "km/l");
+        
+    </script>
+  </body>
+</html>

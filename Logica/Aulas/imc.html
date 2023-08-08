@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IMC</title>
+  </head>
+  <body>
+    <h1>Cálculo de IMC</h1>
+    <script>
+      //Todas as funções são declaradas no início
+
+      //Função sem parâmetros
+      function pularLinha() {
+        document.write("<br>");
+      }
+
+      //Função com parâmetros
+      function mostrar(frase) {
+        document.write(frase);
+        pularLinha();
+      }
+
+      function calcularImc(peso, altura) {
+        var imc = peso / (altura * altura);
+        return imc;
+      }
+
+      var peso = prompt("Informe seu peso: ");
+      var altura = prompt("Informe sua altura: ");
+      var imc = calcularImc(peso, altura);
+
+      mostrar("Seu IMC é " + imc);
+
+      if (imc < 18.5) {
+        mostrar("Seu IMC está abaixo do recomendado!");
+      } else if (imc > 35) {
+        mostrar("Seu IMC está acima do recomendado!");
+      } else {
+        mostrar("Seu IMC está dentro do recomendado!");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Não mostra como fez? Eu recrio do zero!</title>
+  </head>
+  <body>
+    <p>
+      Ricardo mostrou seu programa para Pedro. Assim que Pedro abriu o programa
+      ele viu o seguinte resultado na tela:
+    </p>
+    <p>
+      **************************************************<br />
+      BEM-VINDO AO MEU PROGRAMA<br />
+      **************************************************<br />
+      ELE REALMENTE FUNCIONA<br />
+      **************************************************<br />
+      EU USEI FUNÇÃO PARA FAZER ISSO<br />
+    </p>
+    <p>
+      O problema é que Ricardo não quis mostrar para Pedro como o programa foi
+      feito, mas ele deu uma pista quando exibiu a informação na tela: ele usou
+      uma função para escrever cada linha.
+    </p>
+    <p>
+      Qual das opções abaixo possui um código que ao ser executado, possui a
+      mesma saída que Pedro viu no programa de Ricardo? <br><br>
+    </p>
+  
+<script>
+    function pulaLinha(){
+        document.write("<br>");
+    }
+    function mostrarFrase(frase){
+        document.write("**************************************************");
+        pulaLinha();
+        document.write(frase);
+        pulaLinha();
+    }
+
+    mostrarFrase("BEM-VINDO AO MEU PROGRAMA");
+    mostrarFrase("ELE REALMENTE FUNCIONA");
+    mostrarFrase("EU USEI FUNÇÃO PARA FAZER ISSO");
+</script>
+</body>
+</html>

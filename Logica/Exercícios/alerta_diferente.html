@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alerta Diferente</title>
+  </head>
+  <body>
+    <p>
+      Tuane tem o hábito de colocar sempre três asteriscos antes e depois das
+      mensagens de alerta. Vejamos um exemplo de seu código:
+    </p>
+    <p>
+      var idade1 = 10; <br />
+      var idade2 = 20; <br />
+      var idade3 = 30;<br />
+      var totalIdades = idade1 + idade2 + idade3;<br />
+      var mediaIdades = totalIdades/3;<br />
+      alert("***Total de idades é " + totalIdades + "***");<br />
+      alert("***A média das idades é " + mediaIdades + "***");<br />
+    </p>
+    <p>
+      Qual das opções abaixo cria corretamente a função exibeAlerta, que recebe
+      como parâmetro o texto que queremos exibir no alerta, e que realiza a
+      concatenação com os três asteriscos?
+    </p>
+    <script>
+      function exibeAlerta(mensagem) {
+        alert("***" + mensagem + "***");
+      }
+
+      var idade1 = 10;
+      var idade2 = 20;
+      var idade3 = 30;
+      var totalIdades = idade1 + idade2 + idade3;
+      var mediaIdades = totalIdades / 3;
+
+      exibeAlerta("Total de idades é " + totalIdades);
+      exibeAlerta("A média das idades é " + mediaIdades);
+    </script>
+  </body>
+</html>

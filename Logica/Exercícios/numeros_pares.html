@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todos os números pares de 1 a 100</title>
+  </head>
+  <body>
+    <h1>Todos os números pares de 1 a 100</h1>
+    <p>
+      Roberta é apaixonada por números e resolveu “brincar” com a instrução
+      while. Ela utilizou while para imprimir todos os números pares de 1 a 100,
+      um embaixo do outro, e ao final imprimiu a palavra "FIM".
+    </p>
+    <p>Faça um algoritmo que imprima todos os números pares de 1 a 100</p>
+    <script>
+      //Todas as funções são declaradas no início
+
+      //Função sem parâmetros
+      function pularLinha() {
+        document.write("<br>");
+      }
+
+      //Função com parâmetros
+      function mostrar(frase) {
+        document.write(frase);
+        pularLinha();
+      }
+
+      var cont = 1;
+
+      while (cont <= 100) {
+        if (cont == 1) {
+          cont++;
+        }
+
+        mostrar(cont);
+
+        cont += 2;
+      }
+    </script>
+  </body>
+</html>

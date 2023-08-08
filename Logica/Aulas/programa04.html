@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programa 03</title>
+  </head>
+  <body>
+    <h1>Funções com Parâmetros</h1>
+    <script>
+      //Todas as funções são declaradas no incio
+
+      //Função sem parâmetros
+      function pularLinha() {
+        document.write("<br>");
+      }
+
+      //Função com parâmetros
+      function mostrar(frase) {
+        document.write(frase);
+        pularLinha();
+      }
+
+      var ano = 2023;
+      var nome = "Flávio";
+
+      document.write(nome + " tem " + (ano - 1977) + " anos");
+
+      mostrar("Joaquim tem " + (ano - 1996) + " anos");
+
+      ano = 2024;
+
+      mostrar("Barney tem " + (ano - 1976) + " anos");
+    </script>
+  </body>
+</html>

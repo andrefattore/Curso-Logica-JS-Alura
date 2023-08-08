@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo da Advinhação</title>
+  </head>
+  <body>
+    <h1>Jogo da Advinhação</h1>
+    <script>
+      //Todas as funções são declaradas no início
+
+      //Função sem parâmetros
+      function pularLinha() {
+        document.write("<br>");
+      }
+
+      //Função com parâmetros
+      function mostrar(frase) {
+        document.write(frase);
+        pularLinha();
+      }
+
+      //gera um número aleatório
+      function getRandomInt(max) {
+        return Math.floor(Math.random() * max);
+      }
+
+      var numeroPensado = getRandomInt(10);
+      var tentativa = 1;
+      while (tentativa <= 3) {
+        var chute = parseInt(prompt("Qual é seu chute?"));
+
+        if (chute == numeroPensado) {
+          mostrar("Você acertou! O número pensado foi " + numeroPensado);
+          break;
+        } else {
+          mostrar("Você errou!");
+          tentativa++;
+        }
+        
+      }
+    </script>
+  </body>
+</html>

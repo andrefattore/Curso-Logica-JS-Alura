@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soma de dois Números</title>
+  </head>
+  <body>
+    <h1>Soma de Dois Números</h1>
+    <script>
+      //Todas as funções são declaradas no incio
+
+      //Função sem parâmetros
+      function pularLinha() {
+        document.write("<br>");
+      }
+
+      //Função com parâmetros
+      function mostrar(frase) {
+        document.write(frase);
+        pularLinha();
+      }
+
+      function somaDoisNumeros(n1, n2) {
+        var soma = n1 + n2;
+        return soma;
+      }
+
+      var numero1 = 28;
+      var numero2 = 62;
+
+      var soma = somaDoisNumeros(numero1, numero2);
+
+      mostrar("A soma dos números " + numero1 + " e " + numero2 + " é " + soma);
+    </script>
+  </body>
+</html>
